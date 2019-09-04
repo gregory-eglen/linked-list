@@ -1,5 +1,3 @@
-
-
 class LinkedListNode
   attr_accessor :value, :next_node
 
@@ -26,13 +24,13 @@ class Stack
   # stack and return the value to the user
   def pop
     if @data.nil?
-      return print "nil\n"
+     print "nil\n"
+     return
     else
       print "#{@data.value}\n"
       @data = @data.next_node
     end
   end
-
 end
 
 def print_values(list_node)
