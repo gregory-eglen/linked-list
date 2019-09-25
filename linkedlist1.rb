@@ -45,6 +45,7 @@ end
 
 def reverse_list(list)
   stack = Stack.new
+  
   while list
     stack.push(list.value)
     list = list.next_node
